@@ -33,7 +33,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "gradient-end": "#FF8938",
+              "gradient-start": "#F00",
             },
           },
         },
@@ -47,8 +48,8 @@
   </head>
   <body class="font-manrope">
     <header class="container mx-auto">
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div class="my-20">
+        <div class="flex justify-between items-center flex-col lg:flex-row">
           <div>
             <h1 class="text-7xl font-extrabold">
               It's good <br />
@@ -59,10 +60,14 @@
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button
+              class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end"
+            >
+              Explore More <i class="fa-solid fa-arrow-trend-up"></i>
+            </button>
           </div>
           <div>
-            <img src="images/banner.png" class="max-w-sm" />
+            <img src="images/banner.png" class="" />
             <!-- Rating badge -->
             <div
               class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60"
@@ -184,7 +189,7 @@
       </section>
       <!-- Super client section -->
       <section
-        class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24"
+        class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24"
       >
         <div class="flex lg:pr-28 items-center">
           <div class="space-y-5">
@@ -259,6 +264,65 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- Footer section -->
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+      <div class="flex justify-between my-24">
+        <img src="images/cup.png" alt="" />
+        <p>
+          <span>Ready to get started?</span>
+          <button
+            class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end"
+          >
+            Get Started
+          </button>
+        </p>
+      </div>
+      <div class="footer">
+        <div>
+          <span class="footer-title">Services</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span class="footer-title">Company</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="py-4 bg-transparent border-b-2 border-black outline-none"
+              />
+              <button
+                class="btn text-white absolute top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
   </body>
 </html>
